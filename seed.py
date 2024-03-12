@@ -11,7 +11,7 @@ from connect import create_connect
 
 load_dotenv(Path(__file__).parent.parent / ".env")
 
-# Ініціалізація Faker
+
 fake = Faker()
 
 
