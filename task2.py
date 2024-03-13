@@ -119,7 +119,9 @@ def exit_program():
 
 def get_name() -> str:
     while True:
-        name = input("Введіть імʼя кота для пошуку: ").strip()
+        name = input("Введіть імʼя кота для пошуку або 0. Вихід (exit): ").strip()
+        if name == "0":
+            exit_program()
         try:
             res = cats_collection.find_one({"name": name})
             if res:
