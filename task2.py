@@ -5,6 +5,8 @@ from bson.objectid import ObjectId
 client = create_connect()
 db = client["db-cats"]
 cats_collection = db["cats"]
+# db = client["db-messages"]
+# cats_collection = db["messages"]
 
 
 def get_all(name: str | None = None) -> list[dict]:
